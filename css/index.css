@@ -14,7 +14,7 @@ body {
   margin: 0;
   color: white;
   font-family: PIXELROMAN;
-  background-color: #796be6;
+  background-color: #dbf2a0;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -24,7 +24,7 @@ body {
   background-size: cover;
   -webkit-transition: background-image 1s ease-in-out;
   transition: background-image 3s ease-in-out;
-  background-image: url("/images/init.png");
+/*   background-image: url("/images/init.png"); */
 }
 
 .shadowy-text {
@@ -40,7 +40,8 @@ body {
 }
 
 #main-logo {
-  background-color: #dbf2a0;
+/*   background-color: #dbf2a0;
   border-radius: 3px;
-  box-shadow: 5px 10px 18px #262626;
+  box-shadow: 5px 10px 18px #262626; */
+  text-shadow: 2px 2px 5px #262626;
 }
