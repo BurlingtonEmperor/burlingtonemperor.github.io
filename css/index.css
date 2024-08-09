@@ -32,6 +32,10 @@ body {
 }
 
 .large {
+  font-size: 5vw;
+}
+
+.mobile-large {
   font-size: 8vw;
 }
 
