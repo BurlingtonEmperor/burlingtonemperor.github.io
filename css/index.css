@@ -34,3 +34,9 @@ body {
 .large {
   font-size: 8vw;
 }
+
+#main-logo {
+  background-color: #dbf2a0;
+  border-radius: 3px;
+  box-shadow: 5px 10px 18px #262626;
+}
