@@ -31,8 +31,8 @@ function waitForElement(querySelector, timeout){
   });
 }
 
-waitForElement("body", 3000).then(function () {
-  loadBack("/images/highres.jpg");
-}).catch(() => {
-  console.log("Error: did not load!");
-});
+// waitForElement("body", 3000).then(function () {
+//   loadBack("/images/highres.jpg");
+// }).catch(() => {
+//   console.log("Error: did not load!");
+// });
