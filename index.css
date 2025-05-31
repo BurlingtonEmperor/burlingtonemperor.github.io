@@ -63,8 +63,8 @@ body, html {
 .background {
   background-image: url('/images/sky.jpg');
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 99.5vw;
+  height: 99.5vh;
   background: linear-gradient(to top, #87ceeb, #e0f7ff);
   background-size: cover;
   background-position: center;
