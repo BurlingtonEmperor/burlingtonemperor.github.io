@@ -5,7 +5,8 @@ body, html {
   background: linear-gradient(to top, #87ceeb, #e0f7ff);
 }
 
-/* body {
+body {
+  background-color: #9c3c3c;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -16,7 +17,7 @@ body, html {
   -webkit-transition: background-image 1s ease-in-out;
   transition: background-image 3s ease-in-out;
   background-image: url("/images/sky.jpg");
-} */
+}
 
 .sky {
   position: relative;
@@ -24,6 +25,7 @@ body, html {
   height: 100%;
   overflow: hidden;
   z-index: 0;
+  opacity: 0.5;
 }
 
 .cloud {
@@ -60,13 +62,13 @@ body, html {
   left: 50px;
 }
 
-#background {
+/* #background {
   position: absolute;
   width: 99.5vw;
   height: 99.5vh;
   background: linear-gradient(to top, #87ceeb, #e0f7ff);
   opacity: 0.6;
-}
+} */
 
 @keyframes moveClouds {
   0% {
