@@ -2,7 +2,6 @@ body, html {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: linear-gradient(to top, #87ceeb, #e0f7ff);
 }
 
 body {
