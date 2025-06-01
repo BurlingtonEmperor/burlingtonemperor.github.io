@@ -31,6 +31,6 @@
 // }
 
 function openTheGates () {
-  userInterfaceWindow.slideUp();
+  $(userInterfaceWindow).slideUp();
   document.body.style.backgroundImage = "url('/PinewoodChapel/images/pinksky.jpeg')";
 }
