@@ -17,3 +17,15 @@
 // }
 
 // setInterval(createCloud, 4000);
+
+if (document.readyState === 'ready' || document.readyState === 'complete') {
+  doSomething();
+} 
+
+else {
+  document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+      doSomething();
+    }
+  }
+}
