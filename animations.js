@@ -18,14 +18,19 @@
 
 // setInterval(createCloud, 4000);
 
-if (document.readyState === 'ready' || document.readyState === 'complete') {
-  doSomething();
-} 
+// if (document.readyState === 'ready' || document.readyState === 'complete') {
+//   doSomething();
+// } 
 
-else {
-  document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
-      doSomething();
-    }
-  }
+// else {
+//   document.onreadystatechange = function () {
+//     if (document.readyState == "complete") {
+//       doSomething();
+//     }
+//   }
+// }
+
+function openTheGates () {
+  userInterfaceWindow.slideUp();
+  document.body.style.backgroundImage = "url('/PinewoodChapel/images/pinksky.jpeg')";
 }
