@@ -30,7 +30,16 @@
 //   }
 // }
 
+function loadBack (backSrc) {
+  let newImg = new Image();
+
+  newImg.onload = function () {
+    body.style.backgroundImage = "url('" + newImg.src + "')";
+  }
+  newImg.src = backSrc;
+}
+
 function openTheGates () {
   $(userInterfaceWindow).slideUp();
-  document.body.style.backgroundImage = "url('/PinewoodChapel/images/pinksky.jpeg')";
+  loadBack("/PinewoodChapel/images/pinksky.jpeg");
 }

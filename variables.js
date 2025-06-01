@@ -1,3 +1,5 @@
+const body = document.body;
+
 // User Interface Window
 const userInterfaceWindow = document.getElementById("user-interface-window");
 const passwordForm = document.getElementById("password-form");
