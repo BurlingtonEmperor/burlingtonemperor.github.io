@@ -82,6 +82,10 @@ body {
   font-family: "ROMANSEX";
 }
 
+.no-margin {
+  margin: 0px;
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;
