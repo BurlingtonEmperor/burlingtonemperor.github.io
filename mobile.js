@@ -5,6 +5,7 @@ window.mobileCheck = function() {
 };
 
 if (window.mobileCheck() === true) {
+  alert("check");
   for (let i = 0; i < largeText.length; i++) {
     largeText[i].style.fontSize = "16vw";
   }
