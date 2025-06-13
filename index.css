@@ -78,6 +78,10 @@ body {
   text-shadow: 2px 2px 5px #262626;
 }
 
+.roman {
+  font-family: "ROMANSEX";
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;
