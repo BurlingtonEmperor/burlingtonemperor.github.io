@@ -43,4 +43,8 @@ function openTheGates () {
   $(userInterfaceWindow).slideUp();
   audio95.play();
   loadBack("/PinewoodChapel/images/pinksky.jpeg");
+  
+  setTimeout(function () {
+    homescreen.style.display = "block";
+  }, 1000);
 }
