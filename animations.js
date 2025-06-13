@@ -41,5 +41,6 @@ function loadBack (backSrc) {
 
 function openTheGates () {
   $(userInterfaceWindow).slideUp();
+  audio95.play();
   loadBack("/PinewoodChapel/images/pinksky.jpeg");
 }

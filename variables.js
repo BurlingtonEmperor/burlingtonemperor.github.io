@@ -7,3 +7,4 @@ const thePassword = document.getElementById("password-here");
 const passwordStatus = document.getElementById("password-status");
 
 let ankhKey = 0;
+let audio95 = new Audio('audio_file.mp3');
