@@ -11,3 +11,6 @@ let audio95 = new Audio('win95.mp3');
 
 // views
 const homescreen = document.getElementById("homescreen");
+
+// classes
+const largeText = document.getElementsByClassName("large");
