@@ -23,6 +23,10 @@ body {
   background-image: url("/PinewoodChapel/images/sky.jpg");
 }
 
+input {
+  outline: none;
+}
+
 .sky {
   position: relative;
   width: 100%;
