@@ -92,6 +92,7 @@ input {
 
 .main-icon {
   width: 15vw;
+  display: flex;
 }
 
 /* #background {
