@@ -1,0 +1,37 @@
+.carousel {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.carousel-item {
+  width: 100px;
+  height: 150px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  background: #09f;
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  transform-origin: 50% 50% -400px;
+  transition: transform 1s;
+  border-radius: 8px;
+}
+
+.cutton {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #09f;
+  color: white;
+}
+
+.cutton:hover {
+  background: #07c;
+}
