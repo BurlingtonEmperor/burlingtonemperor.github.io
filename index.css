@@ -90,6 +90,10 @@ input {
   margin: 0px;
 }
 
+.main-icon {
+  width: 15vw;
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;
@@ -109,6 +113,11 @@ input {
 #homescreen {
   display: none;
   margin: 0;
+}
+
+#icon-center {
+  margin: auto;
+  text-align: center;
 }
 
 @keyframes moveClouds {
