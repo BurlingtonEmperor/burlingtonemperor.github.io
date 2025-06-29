@@ -93,6 +93,7 @@ input {
 .main-icon {
   width: 15vw;
   display: flex;
+  gap: 25px;
 }
 
 /* #background {
