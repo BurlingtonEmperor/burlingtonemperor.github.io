@@ -70,13 +70,9 @@
 }
 
 .a, .b, .c {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position: center center;
 }
   
   .a {
