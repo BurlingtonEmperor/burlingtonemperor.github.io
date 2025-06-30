@@ -74,7 +74,7 @@
     transition: background-image 0.2s ease-in-out;
     transform: rotateY(0deg) translateZ(250px);
     background: #81bccc;
-    background-image: url("../a.png");
+    background-image: url("/PinewoodChapel/images/bhs.jpg");
   }
 
   .a:hover {
