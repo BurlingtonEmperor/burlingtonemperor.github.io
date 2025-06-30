@@ -64,7 +64,7 @@
     opacity: 0.95;
     font-size: 1.3em;
     border-radius: 10px;
-    font-family: "title-font";
+    font-family: "ROMANSEX";
     cursor: pointer;
     user-select: none;
   }
@@ -137,6 +137,7 @@
     cursor: pointer;
     background: #a1e896;
     border-radius: 5px;
+    font-family: "ROMANSEX";
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
     transition: box-shadow 0.1s, top 0.1s;
@@ -148,5 +149,6 @@
     top: 104px;
     box-shadow: 0 1px 0 #999;
   }
+  
   .next { right: 5em; }
   .prev { left: 5em; }
