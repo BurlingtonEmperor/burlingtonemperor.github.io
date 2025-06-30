@@ -74,17 +74,25 @@
     transition: background-image 0.2s ease-in-out;
     transform: rotateY(0deg) translateZ(250px);
     background: #81bccc;
-    background-image: url("/PinewoodChapel/images/bhs.jpg");
+    background-image: url("/PinewoodChapel/images/pineglen.jpg");
   }
 
   .a:hover {
-    background-image: url("../flowers.gif");
+    background-image: url("/PinewoodChapel/images/sunrise.webp");
     background-blend-mode: lighten;
   }
 
   .b {
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
     transform: rotateY(60deg) translateZ(250px);
     background: #75c497;
+    background-image: url("/PinewoodChapel/images/msms.webp");
+  }
+
+  .b:hover {
+    background-image: url("/PinewoodChapel/images/purplesky.jpg");
+    background-blend-mode: lighten;
   }
 
   .c {
@@ -92,11 +100,11 @@
     transition: background-image 0.2s ease-in-out;
     transform: rotateY(120deg) translateZ(250px);
     background: #39b54a;
-    background-image: url("../c.png");
+    background-image: url("/PinewoodChapel/images/bhs.jpg");
   }
 
   .c:hover {
-    background-image: url("../cash.gif");
+    background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
     background-blend-mode: lighten;
   }
 
