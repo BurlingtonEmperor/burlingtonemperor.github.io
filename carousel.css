@@ -67,6 +67,9 @@
   font-family: "ROMANSEX";
   cursor: pointer;
   user-select: none;
+  background-size: contain;           /* ✅ Full image visible */
+  background-repeat: no-repeat;       /* ✅ No tiling */
+  background-position: center center;
 }
 
 .a, .b, .c {
