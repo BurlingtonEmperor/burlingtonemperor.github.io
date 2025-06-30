@@ -52,22 +52,33 @@
     transition: transform 1s;
   }
   
-  .item {
-    display: block;
-    position: absolute;
-    background: #000;
-    width: 250px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    color: #FFF;
-    opacity: 0.95;
-    font-size: 1.3em;
-    border-radius: 10px;
-    font-family: "ROMANSEX";
-    cursor: pointer;
-    user-select: none;
-  }
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  font-size: 1.3em;
+  border-radius: 10px;
+  font-family: "ROMANSEX";
+  cursor: pointer;
+  user-select: none;
+}
+
+.a, .b, .c {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
   
   .a {
     -webkit-transition: background-image 0.2s ease-in-out;
