@@ -67,9 +67,10 @@
   font-family: "ROMANSEX";
   cursor: pointer;
   user-select: none;
-  background-size: contain;           /* ✅ Full image visible */
-  background-repeat: no-repeat;       /* ✅ No tiling */
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .item img {
@@ -108,36 +109,36 @@
     background: #81bccc;
   }
 
-  /* .a:hover {
+  .a:hover {
     background-image: url("/PinewoodChapel/images/sunrise.webp");
     background-blend-mode: lighten;
-  } */
+  }
 
   .b {
     -webkit-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out;
     transform: rotateY(60deg) translateZ(250px);
     background: #75c497;
-    /* background-image: url("/PinewoodChapel/images/msms.webp"); */
+    background-image: url("/PinewoodChapel/images/msms.webp");
   }
 
-  /* .b:hover {
+  .b:hover {
     background-image: url("/PinewoodChapel/images/purplesky.jpg");
     background-blend-mode: lighten;
-  } */
+  }
 
   .c {
     -webkit-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out;
     transform: rotateY(120deg) translateZ(250px);
     background: #39b54a;
-    /* background-image: url("/PinewoodChapel/images/bhs.jpg"); */
+    background-image: url("/PinewoodChapel/images/bhs.jpg"); 
   }
 
-  /* .c:hover {
-    background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
-    background-blend-mode: lighten;
-  } */
+.c:hover {
+  background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
+  background-blend-mode: lighten;
+}
 
   .d, .e, .f {
     background-size: cover;
