@@ -97,43 +97,52 @@
 }
 
 .a, .b, .c {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
   
-  .a {
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
-    transform: rotateY(0deg) translateZ(250px);
-    background: #81bccc;
-  }
+.a {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(0deg) translateZ(250px);
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  .a:hover {
-    background-image: url("/PinewoodChapel/images/sunrise.webp");
-    background-blend-mode: lighten;
-  }
+.a:hover {
+  background-image: url("/PinewoodChapel/images/sunrise.webp");
+  background-blend-mode: lighten;
+}
 
-  .b {
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
-    transform: rotateY(60deg) translateZ(250px);
-    background: #75c497;
-    background-image: url("/PinewoodChapel/images/msms.webp");
-  }
+.b {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(60deg) translateZ(250px);
+  background: white;
+  background-image: url("/PinewoodChapel/images/msms.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  .b:hover {
-    background-image: url("/PinewoodChapel/images/purplesky.jpg");
-    background-blend-mode: lighten;
-  }
+.b:hover {
+  background-image: url("/PinewoodChapel/images/purplesky.jpg");
+  background-blend-mode: lighten;
+}
 
-  .c {
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
-    transform: rotateY(120deg) translateZ(250px);
-    background: #39b54a;
-    background-image: url("/PinewoodChapel/images/bhs.jpg"); 
-  }
+.c {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(120deg) translateZ(250px);
+  background: white;
+  background-image: url("/PinewoodChapel/images/bhs.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .c:hover {
   background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
