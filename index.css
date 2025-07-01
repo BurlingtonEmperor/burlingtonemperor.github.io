@@ -123,6 +123,11 @@ input {
   margin: 0;
 }
 
+#pineglen-div {
+  display: none;
+  margin: 0;
+}
+
 #icon-center {
   margin: auto;
   text-align: center;

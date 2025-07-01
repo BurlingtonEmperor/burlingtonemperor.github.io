@@ -76,3 +76,11 @@ function openTheGates () {
     homescreen.style.display = "block";
   }, 1000);
 }
+
+function animPut (elementToHide, soundEffect, imageToLoad, elementToShow) {
+  $(elementToHide).slideUp();
+  let audioFile = new Audio(soundEffect);
+  audioFile.cloneNode(true).play();
+  loadBack(imageToLoad);
+  $(elementToShow).show();
+}
