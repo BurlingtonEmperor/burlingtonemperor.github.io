@@ -3,7 +3,7 @@ const msmsButton = document.getElementById("msms-button");
 const bhsButton = document.getElementById("bhs-button");
 
 pineglenButton.onclick = function () {
-  animPut(homescreen, "/PinewoodChapel/pineglen.mp3", "sunrise.webp", pineglenDiv);
+  animPut(homescreen, "/PinewoodChapel/pineglen.mp3", "/PinewoodChapel/images/sunrise.webp", pineglenDiv);
 }
 
 msmsButton.onclick = function () {
