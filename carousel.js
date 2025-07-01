@@ -44,3 +44,7 @@ function rotate(e) {
     "transform": "rotateY("+currdeg+"deg)"
   });
 }
+
+loadCarousel("/PinewoodChapel/images/msms.webp", itemB[0]);
+loadCarousel("/PinewoodChapel/images/pineglen.jpg", itemA[0]);
+loadCarousel("/PinewoodChapel/images/bhs.jpg", itemC[0]);

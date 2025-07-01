@@ -15,3 +15,8 @@ const pineglenDiv = document.getElementById("pineglen-div");
 
 // classes
 const largeText = document.getElementsByClassName("large");
+
+// Carousel
+const itemA = document.getElementsByClassName("a");
+const itemB = document.getElementsByClassName("b");
+const itemC = document.getElementsByClassName("c");

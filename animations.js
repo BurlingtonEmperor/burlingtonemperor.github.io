@@ -39,6 +39,15 @@ function loadBack (backSrc) {
   newImg.src = backSrc;
 }
 
+function loadCarousel (backSrc, carouselItem) {
+  let newImg = new Image();
+
+  newImg.onload = function () {
+    carouselItem.style.backgroundImage = "url('" + newImg.src + "')";
+  }
+  newImg.src = backSrc;
+}
+
 function waitForElement(querySelector, timeout){
   return new Promise((resolve, reject)=>{
     var timer = false;

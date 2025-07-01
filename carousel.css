@@ -111,7 +111,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/PinewoodChapel/images/pineglen.jpg");
+  background-image: url("/PinewoodChapel/images/placeholder.png");
 }
 
 .a:hover {
@@ -123,7 +123,7 @@
   transition: background-image 0.2s ease-in-out;
   transform: rotateY(60deg) translateZ(250px);
   background: white;
-  background-image: url("/PinewoodChapel/images/msms.webp");
+  background-image: url("/PinewoodChapel/images/placeholder.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -138,7 +138,7 @@
   transition: background-image 0.2s ease-in-out;
   transform: rotateY(120deg) translateZ(250px);
   background: white;
-  background-image: url("/PinewoodChapel/images/bhs.jpg"); 
+  background-image: url("/PinewoodChapel/images/placeholder.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
