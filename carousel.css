@@ -110,11 +110,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-image: url("/PinewoodChapel/images/pineglen.jpg");
 }
 
 .a:hover {
   background-image: url("/PinewoodChapel/images/sunrise.webp");
-  background-blend-mode: lighten;
 }
 
 .b {
@@ -130,7 +130,6 @@
 
 .b:hover {
   background-image: url("/PinewoodChapel/images/purplesky.jpg");
-  background-blend-mode: lighten;
 }
 
 .c {
@@ -146,7 +145,6 @@
 
 .c:hover {
   background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
-  background-blend-mode: lighten;
 }
 
   .d, .e, .f {
