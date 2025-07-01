@@ -1,0 +1,59 @@
+<style>
+.panorama-container {
+  width: 100%;                /* Full width of parent */
+  max-width: 800px;           /* Optional: limit width */
+  height: 400px;              /* Set your desired height */
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+.panorama-inner img {
+  height: 100%;               /* Make image fit container height */
+  user-select: none;
+  pointer-events: none;
+}
+
+.panorama-container.active {
+  cursor: grabbing;
+}
+</style>
+<div class="panorama-container">
+  <div class="panorama-inner">
+    <img src="/PinewoodChapel/images/pineglen.jpg" alt="Panorama">
+  </div>
+</div>
+<script>
+const container = document.querySelector('.panorama-container');
+const inner = document.querySelector('.panorama-inner');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+container.addEventListener('mousedown', (e) => {
+  isDown = true;
+  container.classList.add('active');
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+});
+
+container.addEventListener('mouseleave', () => {
+  isDown = false;
+  container.classList.remove('active');
+});
+
+container.addEventListener('mouseup', () => {
+  isDown = false;
+  container.classList.remove('active');
+});
+
+container.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 2; // scroll speed
+  container.scrollLeft = scrollLeft - walk;
+});
+</script>
