@@ -37,12 +37,12 @@
 } */
 
 .container {
-    margin: 0 auto;
-    width: 250px;
-    height: 200px;
-    position: relative;
-    perspective: 1000px;
-  }
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 600px;
+}
   
   .carousel {
     height: 100%;
