@@ -13,6 +13,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: block; 
+  margin: auto;
 }
 
 .glass-button:hover {
