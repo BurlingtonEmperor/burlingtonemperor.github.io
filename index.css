@@ -102,6 +102,11 @@ input {
   margin: auto;
 }
 
+.button-center {
+  justify-content: center;  
+  align-items: center;   
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;
