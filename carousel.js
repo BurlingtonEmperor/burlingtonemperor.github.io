@@ -45,6 +45,20 @@ function rotate(e) {
   });
 }
 
-loadCarousel("/PinewoodChapel/images/msms.webp", itemB[0]);
-loadCarousel("/PinewoodChapel/images/pineglen.jpg", itemA[0]);
-loadCarousel("/PinewoodChapel/images/bhs.jpg", itemC[0]);
+// loadCarousel("/PinewoodChapel/images/msms.webp", itemB[0]);
+// loadCarousel("/PinewoodChapel/images/pineglen.jpg", itemA[0]);
+// loadCarousel("/PinewoodChapel/images/bhs.jpg", itemC[0]);
+
+const preloadImages = [
+  '/PinewoodChapel/images/msms.webp',
+  '/PinewoodChapel/images/pineglen.jpg',
+  '/PinewoodChapel/images/bhs.jpg',
+  '/PinewoodChapel/images/purplesky.jpg',
+  '/PinewoodChapel/images/bloodmoon.jpg',
+  '/PinewoodChapel/images/sunrise.webp'
+];
+
+preloadImages.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});

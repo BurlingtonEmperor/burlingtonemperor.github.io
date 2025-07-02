@@ -118,12 +118,12 @@ input {
   width: 30%;
 }
 
-#homescreen {
+/* #homescreen {
   display: none;
   margin: 0;
-}
+} */
 
-#pineglen-div {
+#homescreen, #pineglen-div, #msms-div, #bhs-div {
   display: none;
   margin: 0;
 }
