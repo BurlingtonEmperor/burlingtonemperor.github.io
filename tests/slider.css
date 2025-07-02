@@ -1,0 +1,41 @@
+.slider-container {
+  perspective: 1000px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  height: 300px;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.slider-item {
+  flex: 0 0 250px; /* Each item width */
+  margin: 0 10px;
+  height: 250px;
+  background: #09f;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: perspective(600px) rotateY(0deg) translateZ(0);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.slider-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
