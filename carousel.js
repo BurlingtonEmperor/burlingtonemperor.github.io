@@ -55,7 +55,11 @@ const preloadImages = [
   '/PinewoodChapel/images/bhs.jpg',
   '/PinewoodChapel/images/purplesky.jpg',
   '/PinewoodChapel/images/bloodmoon.jpg',
-  '/PinewoodChapel/images/sunrise.webp'
+  '/PinewoodChapel/images/sunrise.webp',
+  '/PinewoodChapel/images/pinksky.jpeg',
+  '/PinewoodChapel/images/morning.jpg',
+  '/PinewoodChapel/images/afternoon.jpg',
+  '/PinewoodChapel/images/night.jpg'
 ];
 
 preloadImages.forEach(src => {
