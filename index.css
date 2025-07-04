@@ -28,6 +28,10 @@ input {
   outline: none;
 }
 
+button {
+  color: black;
+}
+
 .sky {
   position: relative;
   width: 100%;

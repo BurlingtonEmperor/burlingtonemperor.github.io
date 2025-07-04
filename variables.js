@@ -22,3 +22,6 @@ const largeText = document.getElementsByClassName("large");
 const itemA = document.getElementsByClassName("a");
 const itemB = document.getElementsByClassName("b");
 const itemC = document.getElementsByClassName("c");
+
+// Slider
+let currentIndex = 0;

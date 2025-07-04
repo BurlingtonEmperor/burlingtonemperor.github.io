@@ -49,7 +49,7 @@ function rotate(e) {
 // loadCarousel("/PinewoodChapel/images/pineglen.jpg", itemA[0]);
 // loadCarousel("/PinewoodChapel/images/bhs.jpg", itemC[0]);
 
-const preloadImages = [
+const preloadImages = [ // Why not just preload all the images at this point?
   '/PinewoodChapel/images/msms.webp',
   '/PinewoodChapel/images/pineglen.jpg',
   '/PinewoodChapel/images/bhs.jpg',
@@ -59,7 +59,23 @@ const preloadImages = [
   '/PinewoodChapel/images/pinksky.jpeg',
   '/PinewoodChapel/images/morning.jpg',
   '/PinewoodChapel/images/afternoon.jpg',
-  '/PinewoodChapel/images/night.jpg'
+  '/PinewoodChapel/images/night.jpg',
+  '/PinewoodChapel/images/roadrug.jpg',
+  '/PinewoodChapel/images/capecod.jpg',
+  '/PinewoodChapel/images/stainedglass.jpg',
+  '/PinewoodChapel/images/stained1.jpeg',
+  '/PinewoodChapel/images/pinetree.jpg',
+  '/PinewoodChapel/images/peacock.jpg',
+  '/PinewoodChapel/images/winter.jpg',
+  '/PinewoodChapel/images/winter_maiden_resize.jpg',
+  '/PinewoodChapel/images/christmas.webp',
+  '/PinewoodChapel/images/elaborate.webp',
+  '/PinewoodChapel/images/hummingbirds.webp',
+  '/PinewoodChapel/images/flowers.jpg',
+  '/PinewoodChapel/images/spring.jpg',
+  '/PinewoodChapel/images/lake.jpg',
+  '/PinewoodChapel/images/plymouthrock.jpg',
+  '/PinewoodChapel/images/broken.jpg'
 ];
 
 preloadImages.forEach(src => {

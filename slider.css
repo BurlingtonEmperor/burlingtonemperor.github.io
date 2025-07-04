@@ -1,0 +1,136 @@
+.slider-container {
+  perspective: 1200px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  height: 300px;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.slider-item {
+  width: 200px;
+  height: 250px;
+  margin: 0 10px;
+  background: #09f;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform 0.5s, opacity 0.5s;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  opacity: 0.8;
+  font-family: "ROMANSEX";
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-container {
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider Images */
+/* Pine Glen start */
+.slideraone {
+  background-image: url("/PinewoodChapel/images/roadrug.jpg");
+}
+
+.slideraone:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/capecod.jpg");
+}
+
+.slideratwo {
+  background-image: url("/PinewoodChapel/images/lighthouse.jpg");
+}
+
+.slideratwo:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/stainedglass.jpg");
+}
+
+.sliderathree {
+  background-image: url("/PinewoodChapel/images/stained1.jpeg");
+}
+
+.sliderathree:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/pinetree.jpg");
+}
+/* Pine Glen End */
+
+/* MSMS Start */
+.sliderbone {
+  background-image: url("/PinewoodChapel/images/peacock.jpg");
+}
+
+.sliderbone:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/027.jpg");
+}
+
+.sliderbtwo {
+  background-image: url("/PinewoodChapel/images/winter.jpg");
+}
+
+.sliderbtwo:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/winter_maiden_resize.jpg");
+}
+
+.sliderbthree {
+  background-image: url("/PinewoodChapel/images/christmas.webp");
+}
+
+.sliderbthree:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/elaborate.webp");
+}
+/* MSMS End */
+
+/* BHS Start */
+.slidercone {
+  background-image: url("/PinewoodChapel/images/hummingbirds.webp");
+}
+
+.slidercone:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/flowers.jpg");
+}
+
+.sliderctwo {
+  background-image: url("/PinewoodChapel/images/spring.jpg");
+}
+
+.sliderctwo:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/lake.jpg");
+}
+
+.slidercthree {
+  background-image: url("/PinewoodChapel/images/plymouthrock.jpg");
+}
+
+.slidercthree:hover {
+  cursor: pointer;
+  background-image: url("/PinewoodChapel/images/broken.jpg");
+}
+/* BHS End */
