@@ -49,7 +49,7 @@
 
 /* Slider Images */
 /* Pine Glen start */
-.slideraone {
+/* .slideraone {
   background-image: url("/PinewoodChapel/images/roadrug.jpg");
 }
 
@@ -74,11 +74,11 @@
 .sliderathree:hover {
   cursor: pointer;
   background-image: url("/PinewoodChapel/images/pinetree.jpg");
-}
+} */
 /* Pine Glen End */
 
 /* MSMS Start */
-.sliderbone {
+/* .sliderbone {
   background-image: url("/PinewoodChapel/images/peacock.jpg");
 }
 
@@ -103,11 +103,11 @@
 .sliderbthree:hover {
   cursor: pointer;
   background-image: url("/PinewoodChapel/images/elaborate.webp");
-}
+} */
 /* MSMS End */
 
 /* BHS Start */
-.slidercone {
+/* .slidercone {
   background-image: url("/PinewoodChapel/images/hummingbirds.webp");
 }
 
@@ -132,5 +132,5 @@
 .slidercthree:hover {
   cursor: pointer;
   background-image: url("/PinewoodChapel/images/broken.jpg");
-}
+} */
 /* BHS End */
