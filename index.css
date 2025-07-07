@@ -111,6 +111,10 @@ button {
   align-items: center;   
 }
 
+.back-button {
+  font-size: 1em;
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;

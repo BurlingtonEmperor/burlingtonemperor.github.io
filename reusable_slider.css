@@ -22,8 +22,11 @@
   color: white;
   padding: 40px 0;
   font-size: 2rem;
-  border-right: 1px solid #fff;
+  font-family: "ROMANSEX";
+  /* border-right: 1px solid #fff; */
   box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 .slider-prev,
@@ -32,4 +35,13 @@
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
+  font-family: "ROMANSEX";
+}
+
+.slider-buttons {
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
