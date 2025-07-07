@@ -1,0 +1,20 @@
+.panorama-container {
+  width: 100%;                /* Full width of parent */
+  max-width: 800px;           /* Optional: limit width */
+  height: 400px;              /* Set your desired height */
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+.panorama-inner img {
+  height: 100%;               /* Make image fit container height */
+  user-select: none;
+  pointer-events: none;
+}
+
+.panorama-container.active {
+  cursor: grabbing;
+}
