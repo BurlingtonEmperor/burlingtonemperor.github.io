@@ -87,6 +87,11 @@ button {
   text-shadow: 2px 2px 5px #262626;
 }
 
+.mid {
+  font-size: 6vw;
+  text-shadow: 2px 2px 5px #262626;
+}
+
 .roman {
   font-family: "ROMANSEX";
 }
