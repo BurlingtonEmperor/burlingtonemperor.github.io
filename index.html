@@ -16,6 +16,7 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="carousel.css" rel="stylesheet" type="text/css" />
     <!-- <link href="slider.css" rel="stylesheet" type="text/css"/> -->
+    <link href="rotater.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- <div class="sky">
@@ -116,6 +117,55 @@
         <button type="button" id="prev-a">← Prev</button>
         <button type="button" id="next-a">Next →</button>
       </div> -->
+      <div class="scene">
+        <div class="carousel_dd" id="pineglen-rotater">
+          <div class="carousel__cell_pg">1</div>
+          <div class="carousel__cell_pg">2</div>
+          <div class="carousel__cell_pg">3</div>
+          <div class="carousel__cell_pg">4</div>
+          <div class="carousel__cell_pg">5</div>
+          <div class="carousel__cell_pg">6</div>
+          <div class="carousel__cell_pg">7</div>
+          <div class="carousel__cell_pg">8</div>
+          <div class="carousel__cell_pg">9</div>
+          <div class="carousel__cell_pg">10</div>
+          <div class="carousel__cell_pg">11</div>
+          <div class="carousel__cell_pg">12</div>
+          <div class="carousel__cell_pg">13</div>
+          <div class="carousel__cell_pg">14</div>
+          <div class="carousel__cell_pg">15</div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="button-container">
+        <button id="previous-button_pg">Previous</button>
+        <button id="next-button_pg">Next</button>
+      </div>
+
+      <div class="carousel-options">
+        <p>
+          <label>
+            Cells
+            <input class="cells-range" type="range" min="3" max="15" value="3" />
+          </label>
+        </p>
+        <p>
+          <!-- <button class="previous-button">Previous</button>
+          <button class="next-button">Next</button> -->
+        </p>
+        <p>
+          Orientation:
+          <label>
+            <input type="radio" name="orientation" value="horizontal" checked />
+            horizontal
+          </label>
+          <label>
+            <input type="radio" name="orientation" value="vertical" />
+            vertical
+          </label>
+        </p>
+      </div>
     </div>
 
     <div id="msms-div">
@@ -135,6 +185,31 @@
         <button type="button" id="prev-b">← Prev</button>
         <button type="button" id="next-b">Next →</button>
       </div> -->
+      <div class="scene">
+        <div class="carousel_dd" id="msms-rotater">
+          <div class="carousel__cell_msms">1</div>
+          <div class="carousel__cell_msms">2</div>
+          <div class="carousel__cell_msms">3</div>
+          <div class="carousel__cell_msms">4</div>
+          <div class="carousel__cell_msms">5</div>
+          <div class="carousel__cell_msms">6</div>
+          <div class="carousel__cell_msms">7</div>
+          <div class="carousel__cell_msms">8</div>
+          <div class="carousel__cell_msms">9</div>
+          <div class="carousel__cell_msms">10</div>
+          <div class="carousel__cell_msms">11</div>
+          <div class="carousel__cell_msms">12</div>
+          <div class="carousel__cell_msms">13</div>
+          <div class="carousel__cell_msms">14</div>
+          <div class="carousel__cell_msms">15</div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="button-container">
+        <button id="previous-button_msms">Previous</button>
+        <button id="next-button_msms">Next</button>
+      </div>
     </div>
 
     <div id="bhs-div">
@@ -154,6 +229,31 @@
         <button type="button" id="prev-c">← Prev</button>
         <button type="button" id="next-c">Next →</button>
       </div> -->
+      <div class="scene">
+        <div class="carousel_dd" id="bhs-rotater">
+          <div class="carousel__cell_bhs">1</div>
+          <div class="carousel__cell_bhs">2</div>
+          <div class="carousel__cell_bhs">3</div>
+          <div class="carousel__cell_bhs">4</div>
+          <div class="carousel__cell_bhs">5</div>
+          <div class="carousel__cell_bhs">6</div>
+          <div class="carousel__cell_bhs">7</div>
+          <div class="carousel__cell_bhs">8</div>
+          <div class="carousel__cell_bhs">9</div>
+          <div class="carousel__cell_bhs">10</div>
+          <div class="carousel__cell_bhs">11</div>
+          <div class="carousel__cell_bhs">12</div>
+          <div class="carousel__cell_bhs">13</div>
+          <div class="carousel__cell_bhs">14</div>
+          <div class="carousel__cell_bhs">15</div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="button-container">
+        <button id="previous-button_bhs">Previous</button>
+        <button id="next-button_bhs">Next</button>
+      </div>
     </div>
     
     <script src="jquery.min.js"></script>
@@ -161,6 +261,7 @@
     <script src="animations.js"></script>
     <script src="carousel.js"></script>
     <!-- <script src="slider.js"></script> -->
+    <script src="rotater.js"></script>
     <script src="buttons.js"></script>
     <script src="password.js"></script>
     <script src="mobile.js"></script>
