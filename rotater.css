@@ -16,6 +16,7 @@
   transition: transform 1s;
 }
 
+/* Probably the worst way to do this but... */
 .carousel__cell_pg, .carousel_cell_msms, .carousel_cell_bhs, .carousel_cell {
   position: absolute;
   width: 190px;
