@@ -9,4 +9,6 @@ if (window.mobileCheck() === true) {
   for (let i = 0; i < largeText.length; i++) {
     largeText[i].style.fontSize = "16vw";
   }
+
+  userInterfaceWindow.style.width = "36%";
 }
