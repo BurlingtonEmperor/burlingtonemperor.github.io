@@ -1,0 +1,23 @@
+.viewer {
+  perspective: 1000px;
+  width: 400px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
