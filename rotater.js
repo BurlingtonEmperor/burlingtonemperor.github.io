@@ -94,7 +94,7 @@ function changeCarousel() {
 
   theta = 360 / cellCount_pg;
   var cellSize = isHorizontal ? cellWidth : cellHeight;
-  radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+  radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount_pg ) );
   for ( var i=0; i < pineGlenCells.length; i++ ) {
     var cell = pineGlenCells[i];
     if ( i < cellCount ) {
