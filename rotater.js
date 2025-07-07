@@ -97,7 +97,7 @@ function changeCarousel() {
   radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount_pg ) );
   for ( var i=0; i < pineGlenCells.length; i++ ) {
     var cell = pineGlenCells[i];
-    if ( i < cellCount ) {
+    if ( i < cellCount_pg ) {
       // visible cell
       cell.style.opacity = 1;
       var cellAngle = theta * i;
@@ -111,7 +111,7 @@ function changeCarousel() {
 
   for ( var i=0; i < msmsCells.length; i++ ) {
     var cell = msmsCells[i];
-    if ( i < cellCount ) {
+    if ( i < cellCount_pg ) {
       // visible cell
       cell.style.opacity = 1;
       var cellAngle = theta * i;
@@ -125,7 +125,7 @@ function changeCarousel() {
 
   for ( var i=0; i < bhsCells.length; i++ ) {
     var cell = bhsCells[i];
-    if ( i < cellCount ) {
+    if ( i < cellCount_pg ) {
       // visible cell
       cell.style.opacity = 1;
       var cellAngle = theta * i;
