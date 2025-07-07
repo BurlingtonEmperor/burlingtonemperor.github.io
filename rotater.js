@@ -1,13 +1,13 @@
 const pineGlenRotator = document.querySelector('#pineglen-rotater');
-const pineGlenCells = carousel.querySelectorAll('.carousel__cell_pg');
+const pineGlenCells = pineGlenRotator.querySelectorAll('.carousel__cell_pg');
 let cellCount_pg; 
 
 const msmsRotator = document.querySelector('#msms-rotater');
-const msmsCells = carousel.querySelectorAll('.carousel__cell_msms');
+const msmsCells = msmsRotator.querySelectorAll('.carousel__cell_msms');
 let cellCount_msms; 
 
 const bhsRotator = document.querySelector('#bhs-rotater');
-const bhsCells = carousel.querySelectorAll('.carousel__cell_bhs');
+const bhsCells = bhsRotator.querySelectorAll('.carousel__cell_bhs');
 let cellCount_bhs; 
 
 let selectedIndex_pg = 0;
