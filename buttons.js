@@ -7,6 +7,8 @@ const backPineglen = document.getElementById("back-pineglen");
 const backMsms = document.getElementById("back-msms");
 const backBhs = document.getElementById("back-bhs");
 
+const backPineglen_bp = document.getElementById("back-pineglen-bp"); // this is one building photo viewer for all but I'm far too lazy to change the name.
+
 pineglenButton.onclick = function () {
   animPut(homescreen, "/PinewoodChapel/pineglen.mp3", "/PinewoodChapel/images/morning.jpg", pineglenDiv);
 }
