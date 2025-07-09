@@ -62,13 +62,13 @@ backBhs.onclick = function () {
 backPineglen_bp.onclick = function () {
   switch (prevLoc) {
     case 0:
-      animPut(buildingPhotoViewer, 0, "/PinewoodChapel/images/morning.jpg", pineglenDiv);
+      animPut(buildingPhotoViewer, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/morning.jpg", pineglenDiv);
       break;
     case 1:
-      animPut(buildingPhotoViewer, 0, "/PinewoodChapel/images/afternoon.jpg", msmsDiv);
+      animPut(buildingPhotoViewer, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/afternoon.jpg", msmsDiv);
       break;
     case 2:
-      animPut(buildingPhotoViewer, 0, "/PinewoodChapel/images/night.jpg", bhsDiv);
+      animPut(buildingPhotoViewer, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/night.jpg", bhsDiv);
       break;
   }
 }
