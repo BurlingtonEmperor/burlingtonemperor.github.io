@@ -128,6 +128,7 @@ button {
 
 .iframe-wrapper {
   position: relative;
+  height: 70vh;
 }
 
 .iframe-wrapper iframe {
