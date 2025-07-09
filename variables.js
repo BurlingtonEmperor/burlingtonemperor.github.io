@@ -27,3 +27,6 @@ const itemC = document.getElementsByClassName("c");
 
 // Slider
 let currentIndex = 0;
+
+// BP
+const bpIframe = document.getElementById("bp-iframe");

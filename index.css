@@ -151,6 +151,14 @@ button {
   text-align: center;
 }
 
+#bp-iframe {
+  margin: auto;
+  text-align: center;
+  border: none;
+  width: 800px;
+  height: 800px;
+}
+
 @keyframes moveClouds {
   0% {
     transform: translateX(-200px);

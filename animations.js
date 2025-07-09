@@ -87,9 +87,16 @@ function openTheGates () {
 }
 
 function animPut (elementToHide, soundEffect, imageToLoad, elementToShow) {
+  let audioFile = new Audio(soundEffect);
+  if (soundEffect == 0) {
+    // do nothing
+  }
+
+  else {
+    audioFile.cloneNode(true).play();
+  }
+  
   loadBack(imageToLoad);
   $(elementToHide).hide();
-  let audioFile = new Audio(soundEffect);
-  audioFile.cloneNode(true).play();
   $(elementToShow).show();
 }
