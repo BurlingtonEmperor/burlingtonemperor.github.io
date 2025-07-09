@@ -30,19 +30,19 @@ let prevLoc = 0;
 bpPGButton.onclick = function () {
   prevLoc = 0;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=pineglen";
-  animPut(pineglenDiv, 0, "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
+  animPut(pineglenDiv, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
 }
 
 bpMSMSButton.onclick = function () {
   prevLoc = 1;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=msms";
-  animPut(msmsDiv, 0, "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
+  animPut(msmsDiv, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
 }
 
 bpBHSButton.onclick = function () {
   prevLoc = 2;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=bhs";
-  animPut(bhsDiv, 0, "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
+  animPut(bhsDiv, "/PinewoodChapel/water.mp3", "/PinewoodChapel/images/pool.jpg", buildingPhotoViewer);
 }
 
 // back clicks

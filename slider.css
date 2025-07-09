@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.slider-item:hover {
+  cursor: pointer;
+}
+
 .button-container {
   display: flex;
   margin: auto;
