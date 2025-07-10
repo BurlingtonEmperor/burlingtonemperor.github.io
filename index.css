@@ -177,6 +177,10 @@ button {
   height: 800px;
 }
 
+#guestbook-frame {
+  overflow-y: auto;
+}
+
 @keyframes moveClouds {
   0% {
     transform: translateX(-200px);
