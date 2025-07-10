@@ -16,6 +16,7 @@ const msmsDiv = document.getElementById("msms-div");
 const bhsDiv = document.getElementById("bhs-div");
 
 const buildingPhotoViewer = document.getElementById("pine-glen-building-photos");
+const guestbookDiv = document.getElementById("guestbook-div");
 
 // classes
 const largeText = document.getElementsByClassName("large");
