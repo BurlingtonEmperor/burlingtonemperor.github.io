@@ -1,4 +1,5 @@
 const body = document.body;
+let commonImagePath = '../images/';
 
 // User Interface Window
 const userInterfaceWindow = document.getElementById("user-interface-window");

@@ -71,7 +71,7 @@ function waitForElement(querySelector, timeout){
 }
 
 waitForElement("body", 3000).then(function () {
-  loadBack("/burlingtonemperor.github.io/images/sky.jpg");
+  loadBack("../images/sky.jpg");
 }).catch(() => {
   console.log("Error: did not load!");
 });
@@ -79,7 +79,7 @@ waitForElement("body", 3000).then(function () {
 function openTheGates () {
   $(userInterfaceWindow).slideUp();
   audio95.play();
-  loadBack("/burlingtonemperor.github.io/images/pinksky.jpeg");
+  loadBack("../images/pinksky.jpeg");
   
   setTimeout(function () {
     homescreen.style.display = "block";

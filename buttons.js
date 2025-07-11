@@ -19,15 +19,15 @@ const backPineglen_bp = document.getElementById("back-pineglen-bp"); // this is 
 const backGuestbook = document.getElementById("back-guestbook");
 
 pineglenButton.onclick = function () {
-  animPut(homescreen, "/burlingtonemperor.github.io/pineglen.mp3", "/burlingtonemperor.github.io/images/morning.jpg", pineglenDiv);
+  animPut(homescreen, "pineglen.mp3", commonImagePath + "morning.jpg", pineglenDiv);
 }
 
 msmsButton.onclick = function () {
-  animPut(homescreen, "/burlingtonemperor.github.io/PS1.mp3", "/burlingtonemperor.github.io/images/afternoon.jpg", msmsDiv);
+  animPut(homescreen, "PS1.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
 }
 
 bhsButton.onclick = function () {
-  animPut(homescreen, "/burlingtonemperor.github.io/PS2.mp3", "/burlingtonemperor.github.io/images/night.jpg", bhsDiv);
+  animPut(homescreen, "PS2.mp3", commonImagePath + "night.jpg", bhsDiv);
 }
 
 // BP
@@ -35,61 +35,61 @@ let prevLoc = 0;
 bpPGButton.onclick = function () {
   prevLoc = 0;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=pineglen";
-  animPut(pineglenDiv, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/pool.jpg", buildingPhotoViewer);
+  animPut(pineglenDiv, "water.mp3", commonImagePath + "pool.jpg", buildingPhotoViewer);
 }
 
 bpMSMSButton.onclick = function () {
   prevLoc = 1;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=msms";
-  animPut(msmsDiv, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/pool.jpg", buildingPhotoViewer);
+  animPut(msmsDiv, "water.mp3", commonImagePath + "pool.jpg", buildingPhotoViewer);
 }
 
 bpBHSButton.onclick = function () {
   prevLoc = 2;
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=bhs";
-  animPut(bhsDiv, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/pool.jpg", buildingPhotoViewer);
+  animPut(bhsDiv, "water.mp3", commonImagePath + "pool.jpg", buildingPhotoViewer);
 }
 
 // Guestbook
 guestbookPGButton.onclick = function () {
   prevLoc = 0;
-  animPut(pineglenDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/moon.jpg", guestbookDiv);
+  animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
 }
 
 guestbookMSMSButton.onclick = function () {
   prevLoc = 1;
-  animPut(msmsDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/moon.jpg", guestbookDiv);
+  animPut(msmsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
 }
 
 guestbookBHSButton.onclick = function () {
   prevLoc = 2;
-  animPut(bhsDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/moon.jpg", guestbookDiv);
+  animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
 }
 
 // back clicks
 backPineglen.onclick = function () {
-  animPut(pineglenDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/pinksky.jpeg", homescreen);
+  animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
 
 backMsms.onclick = function () {
-  animPut(msmsDiv, "/burlingtonemperor.github.io/windowsnt.mp3", "/burlingtonemperor.github.io/images/pinksky.jpeg", homescreen);
+  animPut(msmsDiv, "windowsnt.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
 
 backBhs.onclick = function () {
-  animPut(bhsDiv, "/burlingtonemperor.github.io/PSX.mp3", "/burlingtonemperor.github.io/images/pinksky.jpeg", homescreen);
+  animPut(bhsDiv, "PSX.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
 
 // back BP
 backPineglen_bp.onclick = function () {
   switch (prevLoc) {
     case 0:
-      animPut(buildingPhotoViewer, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/morning.jpg", pineglenDiv);
+      animPut(buildingPhotoViewer, "water.mp3", commonImagePath + "morning.jpg", pineglenDiv);
       break;
     case 1:
-      animPut(buildingPhotoViewer, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/afternoon.jpg", msmsDiv);
+      animPut(buildingPhotoViewer, "water.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
       break;
     case 2:
-      animPut(buildingPhotoViewer, "/burlingtonemperor.github.io/water.mp3", "/burlingtonemperor.github.io/images/night.jpg", bhsDiv);
+      animPut(buildingPhotoViewer, "water.mp3", commonImagePath + "night.jpg", bhsDiv);
       break;
   }
 }
@@ -98,13 +98,13 @@ backPineglen_bp.onclick = function () {
 backGuestbook.onclick = function () {
   switch (prevLoc) {
     case 0:
-      animPut(guestbookDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/morning.jpg", pineglenDiv);
+      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "morning.jpg", pineglenDiv);
       break;
     case 1:
-      animPut(guestbookDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/afternoon.jpg", msmsDiv);
+      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
       break;
     case 2:
-      animPut(guestbookDiv, "/burlingtonemperor.github.io/Utopia_Asterisk.mp3", "/burlingtonemperor.github.io/images/night.jpg", bhsDiv);
+      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
       break;
   }
 }
