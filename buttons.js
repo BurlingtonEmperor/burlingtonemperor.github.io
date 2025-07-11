@@ -10,6 +10,8 @@ const guestbookPGButton = document.getElementById("guestbook-pg-button");
 const guestbookMSMSButton = document.getElementById("guestbook-msms-button");
 const guestbookBHSButton = document.getElementById("guestbook-bhs-button");
 
+const guestButton = document.getElementById("guest-button");
+
 // back buttons
 const backPineglen = document.getElementById("back-pineglen");
 const backMsms = document.getElementById("back-msms");
@@ -107,4 +109,8 @@ backGuestbook.onclick = function () {
       animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
       break;
   }
+}
+
+guestButton.onclick = function () { // guest browsing
+  openTheGates();
 }
