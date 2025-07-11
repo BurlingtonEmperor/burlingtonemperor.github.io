@@ -113,4 +113,5 @@ backGuestbook.onclick = function () {
 
 guestButton.onclick = function () { // guest browsing
   openTheGates();
+  console.log("a guest has arrived!");
 }
