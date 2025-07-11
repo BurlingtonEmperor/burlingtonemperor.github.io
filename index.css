@@ -199,6 +199,10 @@ button {
   overflow-y: auto;
 }
 
+#site-news {
+  font-size: 1.5vw;
+}
+
 @keyframes moveClouds {
   0% {
     transform: translateX(-200px);
