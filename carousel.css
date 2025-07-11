@@ -111,11 +111,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/PinewoodChapel/images/pineglen.jpg");
+  background-image: url("/burlingtonemperor.github.io/images/pineglen.jpg");
 }
 
 .a:hover {
-  background-image: url("/PinewoodChapel/images/sunrise.webp");
+  background-image: url("/burlingtonemperor.github.io/images/sunrise.webp");
 }
 
 .b {
@@ -123,14 +123,14 @@
   transition: background-image 0.2s ease-in-out;
   transform: rotateY(60deg) translateZ(250px);
   background: white;
-  background-image: url("/PinewoodChapel/images/msms.webp");
+  background-image: url("/burlingtonemperor.github.io/images/msms.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .b:hover {
-  background-image: url("/PinewoodChapel/images/purplesky.jpg");
+  background-image: url("/burlingtonemperor.github.io/images/purplesky.jpg");
 }
 
 .c {
@@ -138,14 +138,14 @@
   transition: background-image 0.2s ease-in-out;
   transform: rotateY(120deg) translateZ(250px);
   background: white;
-  background-image: url("/PinewoodChapel/images/bhs.jpg"); 
+  background-image: url("/burlingtonemperor.github.io/images/bhs.jpg"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .c:hover {
-  background-image: url("/PinewoodChapel/images/bloodmoon.jpg");
+  background-image: url("/burlingtonemperor.github.io/images/bloodmoon.jpg");
 }
 
   .d, .e, .f {

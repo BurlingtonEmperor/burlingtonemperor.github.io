@@ -50,16 +50,16 @@ function rotate(e) {
 // loadCarousel("/PinewoodChapel/images/bhs.jpg", itemC[0]);
 
 const preloadImages = [ // Why not just preload all the images at this point?
-  '/PinewoodChapel/images/msms.webp',
-  '/PinewoodChapel/images/pineglen.jpg',
-  '/PinewoodChapel/images/bhs.jpg',
-  '/PinewoodChapel/images/purplesky.jpg',
-  '/PinewoodChapel/images/bloodmoon.jpg',
-  '/PinewoodChapel/images/sunrise.webp',
-  '/PinewoodChapel/images/pinksky.jpeg',
-  '/PinewoodChapel/images/morning.jpg',
-  '/PinewoodChapel/images/afternoon.jpg',
-  '/PinewoodChapel/images/night.jpg'
+  '/burlingtonemperor.github.io/images/msms.webp',
+  '/burlingtonemperor.github.io/images/pineglen.jpg',
+  '/burlingtonemperor.github.io/images/bhs.jpg',
+  '/burlingtonemperor.github.io/images/purplesky.jpg',
+  '/burlingtonemperor.github.io/images/bloodmoon.jpg',
+  '/burlingtonemperor.github.io/images/sunrise.webp',
+  '/burlingtonemperor.github.io/images/pinksky.jpeg',
+  '/burlingtonemperor.github.io/images/morning.jpg',
+  '/burlingtonemperor.github.io/images/afternoon.jpg',
+  '/burlingtonemperor.github.io/images/night.jpg'
   // '/PinewoodChapel/images/roadrug.jpg',
   // '/PinewoodChapel/images/capecod.jpg',
   // '/PinewoodChapel/images/stainedglass.jpg',
