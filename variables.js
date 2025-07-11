@@ -31,3 +31,5 @@ let currentIndex = 0;
 
 // BP
 const bpIframe = document.getElementById("bp-iframe");
+// Guestbook
+const guestbookIframe = document.getElementById("guestbook-frame");

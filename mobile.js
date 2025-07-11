@@ -11,4 +11,6 @@ if (window.mobileCheck() === true) {
   }
 
   userInterfaceWindow.style.width = "36%";
+
+  guestbookIframe.src = "https://pinewoodchapel.netlify.app/mobile.html";
 }
