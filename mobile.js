@@ -14,5 +14,6 @@ if (window.mobileCheck() === true) {
 
   guestbookIframe.src = "https://pinewoodchapel.netlify.app/mobile.html";
   body.style.overflowX = "hidden";
+  guestbookIframe.style.overflowX = "hidden";
   // guestbookIframe.style.width = "500px";
 }
