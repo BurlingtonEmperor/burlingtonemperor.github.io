@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "ROMANSEX";
+  src: url("../ROMANSEX.ttf");
+}
+
+body {
+  font-family: "ROMANSEX";
+}
+
+.contents {
+  font-size: 1.8vw;
+}
