@@ -96,7 +96,7 @@
   opacity: 0;
 }
 
-.a, .b, .c {
+.a, .b, .c, .d {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -148,7 +148,7 @@
   background-image: url("../images/bloodmoon.jpg");
 }
 
-  .d, .e, .f {
+  /* .d, .e, .f {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -157,14 +157,19 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+  } */
 
-  /* .d {
-    transform: rotateY(180deg) translateZ(250px);
-    background: #eae1dd;
-    background-image: url("../IMG_0668.jpeg");
-  }
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background: #91cfe1;
+  transition: background-color 0.2s ease-in-out;
+}
 
+.d:hover {
+  background-color: rgb(215, 244, 211);
+}
+
+/*
   .e {
     transform: rotateY(240deg) translateZ(250px);
     background: #ece1eb;

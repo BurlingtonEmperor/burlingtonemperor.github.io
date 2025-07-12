@@ -56,10 +56,10 @@ const preloadImages = [ // Why not just preload all the images at this point?
   commonImagePath + 'purplesky.jpg',
   commonImagePath + 'bloodmoon.jpg',
   commonImagePath + 'sunrise.webp',
-  commonImagePath + 'pinksky.jpeg',
-  commonImagePath + 'morning.jpg',
-  commonImagePath + 'afternoon.jpg',
-  commonImagePath + 'night.jpg'
+  commonImagePath + 'pinksky.jpeg'
+  // commonImagePath + 'morning.jpg',
+  // commonImagePath + 'afternoon.jpg',
+  // commonImagePath + 'night.jpg'
   // '/PinewoodChapel/images/roadrug.jpg',
   // '/PinewoodChapel/images/capecod.jpg',
   // '/PinewoodChapel/images/stainedglass.jpg',
