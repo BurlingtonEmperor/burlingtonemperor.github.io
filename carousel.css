@@ -161,7 +161,7 @@
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #91cfe1;
+  background: #3abfe3;
   transition: background-color 0.2s ease-in-out;
 }
 
