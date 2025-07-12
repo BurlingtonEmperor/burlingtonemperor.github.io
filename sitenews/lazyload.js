@@ -49,7 +49,7 @@ function loadBack (backSrc) {
 }
 
 waitForElement("body", 3000).then(function () {
-  loadBack("clouds.jpg");
+  loadBack("IMG_1958.jpeg");
 }).catch(() => {
   console.log("Error: did not load!");
 });
