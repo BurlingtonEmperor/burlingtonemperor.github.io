@@ -11,6 +11,7 @@ const guestbookMSMSButton = document.getElementById("guestbook-msms-button");
 const guestbookBHSButton = document.getElementById("guestbook-bhs-button");
 
 const guestButton = document.getElementById("guest-button");
+const extraButton = document.getElementById("extra-button");
 
 // back buttons
 const backPineglen = document.getElementById("back-pineglen");
@@ -111,7 +112,13 @@ backGuestbook.onclick = function () {
   }
 }
 
+// Guest users
 guestButton.onclick = function () { // guest browsing
   openTheGates();
   console.log("a guest has arrived!");
+}
+
+// extras
+extraButton.onclick = function () {
+  window.open("extra.html");
 }
