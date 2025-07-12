@@ -1,5 +1,6 @@
 const body = document.body;
 let commonImagePath = '../images/';
+const siteNewsFont = document.getElementById("site-news");
 
 // User Interface Window
 const userInterfaceWindow = document.getElementById("user-interface-window");
