@@ -18,6 +18,10 @@ body {
   background-image: url("IMG_1959.jpeg");
 }
 
+p {
+  margin: 0;
+}
+
 .large {
   font-size: 8vw;
   text-shadow: 2px 2px 5px #262626;
@@ -26,6 +30,10 @@ body {
 .mid {
   font-size: 6vw;
   text-shadow: 2px 2px 5px #262626;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .glass-button {
@@ -43,7 +51,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  display: block; 
+  display: inline-block;
   margin: auto;
 }
 
@@ -53,8 +61,8 @@ body {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
-#container {
+/* #container {
   width: 95%;
   height: 90%;
   overflow-y: auto;
-}
+} */
