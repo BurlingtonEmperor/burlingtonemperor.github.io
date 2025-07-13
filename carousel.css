@@ -161,12 +161,12 @@
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #084d61;
+  background: #023746;
   transition: background-color 0.2s ease-in-out;
 }
 
 .d:hover {
-  background-color: rgb(215, 244, 211);
+  background-color: rgb(34, 88, 26);
 }
 
 .e {
