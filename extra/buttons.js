@@ -20,6 +20,10 @@ function animPut (elementToHide, imageToLoad, elementToShow) {
   $(elementToShow).show();
 }
 
+backBP.onclick = function () {
+  animPut(photoViewer, "../images/capecod.jpg", mainDiv);
+}
+
 francisButton.onclick = function () {
   bpIframe.src = "";
   animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
