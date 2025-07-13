@@ -21,3 +21,7 @@ body {
 .contents {
   font-size: 2vw;
 }
+
+.center-text {
+  text-align: center;
+}
