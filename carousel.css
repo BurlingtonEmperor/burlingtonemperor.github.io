@@ -161,7 +161,7 @@
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #3abfe3;
+  background: #084d61;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -169,12 +169,17 @@
   background-color: rgb(215, 244, 211);
 }
 
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background: #7a1472;
+  transition: background-color 0.2s ease-in-out;
+}  
+
+.e:hover {
+  background-color: #ae83af;
+}
+
 /*
-  .e {
-    transform: rotateY(240deg) translateZ(250px);
-    background: #ece1eb;
-    background-image: url("../IMG_0669.jpeg");
-  } 
 
 .f {
     transform: rotateY(300deg) translateZ(250px);

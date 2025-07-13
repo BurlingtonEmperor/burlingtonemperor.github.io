@@ -6,9 +6,11 @@ const bpPGButton = document.getElementById("bp-pg-button");
 const bpMSMSButton = document.getElementById("bp-msms-button");
 const bpBHSButton = document.getElementById("bp-bhs-button");
 
-const guestbookPGButton = document.getElementById("guestbook-pg-button");
-const guestbookMSMSButton = document.getElementById("guestbook-msms-button");
-const guestbookBHSButton = document.getElementById("guestbook-bhs-button");
+// const guestbookPGButton = document.getElementById("guestbook-pg-button");
+// const guestbookMSMSButton = document.getElementById("guestbook-msms-button");
+// const guestbookBHSButton = document.getElementById("guestbook-bhs-button");
+
+const gbButton = document.getElementById("gb-button");
 
 const guestButton = document.getElementById("guest-button");
 const extraButton = document.getElementById("extra-button");
@@ -54,19 +56,23 @@ bpBHSButton.onclick = function () {
 }
 
 // Guestbook
-guestbookPGButton.onclick = function () {
-  prevLoc = 0;
-  animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
-}
+// guestbookPGButton.onclick = function () {
+//   prevLoc = 0;
+//   animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
+// }
 
-guestbookMSMSButton.onclick = function () {
-  prevLoc = 1;
-  animPut(msmsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
-}
+// guestbookMSMSButton.onclick = function () {
+//   prevLoc = 1;
+//   animPut(msmsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
+// }
 
-guestbookBHSButton.onclick = function () {
-  prevLoc = 2;
-  animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
+// guestbookBHSButton.onclick = function () {
+//   prevLoc = 2;
+//   animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
+// }
+
+gbButton.onclick = function () {
+  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
 }
 
 // back clicks
@@ -99,17 +105,19 @@ backPineglen_bp.onclick = function () {
 
 // back Guestbook
 backGuestbook.onclick = function () {
-  switch (prevLoc) {
-    case 0:
-      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "morning.jpg", pineglenDiv);
-      break;
-    case 1:
-      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
-      break;
-    case 2:
-      animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
-      break;
-  }
+  // switch (prevLoc) {
+  //   case 0:
+  //     animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "morning.jpg", pineglenDiv);
+  //     break;
+  //   case 1:
+  //     animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
+  //     break;
+  //   case 2:
+  //     animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
+  //     break;
+  // }
+
+  animPut(guestbookDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
 
 // Guest users
