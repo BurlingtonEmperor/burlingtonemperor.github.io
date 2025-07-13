@@ -35,3 +35,8 @@ waitForElement("body", 3000).then(function () {
 }).catch(() => {
   console.log("Error: did not load!");
 });
+
+const bpIframe = document.getElementById("bp-iframe");
+
+const mainDiv = document.getElementById("main");
+const photoViewer = document.getElementById("photo-viewer");

@@ -18,7 +18,7 @@ body {
   background-image: url("IMG_1959.jpeg");
 }
 
-p {
+p, h3 {
   margin: 0;
 }
 
@@ -61,8 +61,38 @@ p {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
+.iframe-wrapper {
+  position: relative;
+  height: 70vh;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* #container {
   width: 95%;
   height: 90%;
   overflow-y: auto;
 } */
+
+#photo-viewer {
+  display: none;
+}
+
+#bp-iframe {
+  margin: auto;
+  text-align: center;
+  border: none;
+  width: 800px;
+  height: 500px;
+}
