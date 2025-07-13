@@ -25,7 +25,7 @@ backBP.onclick = function () {
 }
 
 francisButton.onclick = function () {
-  bpIframe.src = "";
+  bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=francis";
   animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
 }
 
