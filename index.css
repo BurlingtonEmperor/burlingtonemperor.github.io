@@ -177,7 +177,7 @@ button {
   margin: 0;
 } */
 
-#homescreen, #pineglen-div, #msms-div, #bhs-div, #pine-glen-building-photos, #guestbook-div {
+#homescreen, #pineglen-div, #msms-div, #bhs-div, #pine-glen-building-photos, #guestbook-div, #file-div {
   display: none;
   margin: 0;
 }
@@ -187,7 +187,7 @@ button {
   text-align: center;
 }
 
-#bp-iframe, #guestbook-frame {
+#bp-iframe, #guestbook-frame, #file-iframe {
   margin: auto;
   text-align: center;
   border: none;

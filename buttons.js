@@ -15,6 +15,11 @@ const gbButton = document.getElementById("gb-button");
 const guestButton = document.getElementById("guest-button");
 const extraButton = document.getElementById("extra-button");
 
+// file archive
+const faPGButton = document.getElementById("fa-pg-button");
+const faMSMSButton = document.getElementById("fa-msms-button");
+const faBHSButton = document.getElementById("fa-bhs-button");
+
 // back buttons
 const backPineglen = document.getElementById("back-pineglen");
 const backMsms = document.getElementById("back-msms");
@@ -22,6 +27,7 @@ const backBhs = document.getElementById("back-bhs");
 
 const backPineglen_bp = document.getElementById("back-pineglen-bp"); // this is one building photo viewer for all but I'm far too lazy to change the name.
 const backGuestbook = document.getElementById("back-guestbook");
+const backFiles = document.getElementById("back-files");
 
 pineglenButton.onclick = function () {
   animPut(homescreen, "pineglen.mp3", commonImagePath + "morning.jpg", pineglenDiv);
@@ -73,6 +79,22 @@ bpBHSButton.onclick = function () {
 
 gbButton.onclick = function () {
   animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "moon.jpg", guestbookDiv);
+}
+
+// File archive
+faPGButton.onclick = function () {
+  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  fileIframe.src = "../file_map/pineglen.html";
+}
+
+faMSMSButton.onclick = function () {
+  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  fileIframe.src = "../file_map/msms.html";
+}
+
+faBHSButton.onclick = function () {
+  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  fileIframe.src = "../file_map/bhs.html";
 }
 
 // back clicks
@@ -129,4 +151,9 @@ guestButton.onclick = function () { // guest browsing
 // extras
 extraButton.onclick = function () {
   window.open("extra.html");
+}
+
+// back from file viewer
+backFiles.onclick = function () {
+  animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }

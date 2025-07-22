@@ -114,3 +114,13 @@ function updateBreadcrumb(currentId) {
   renderFilesInFolder(ROOT_FOLDER_ID);
   updateBreadcrumb(ROOT_FOLDER_ID);
 })();
+
+const loadInterval = setInterval(function () {
+  if (breadcrumbContainer.innerHTML === null || breadcrumbContainer.innerHTML === "" || breadcrumbContainer.innerHTML === undefined) {
+    // do nothing
+  }
+
+  else {
+    document.getElementById("loading-div").style.display = "none";
+  }
+}, 500);

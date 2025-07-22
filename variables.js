@@ -19,6 +19,7 @@ const bhsDiv = document.getElementById("bhs-div");
 
 const buildingPhotoViewer = document.getElementById("pine-glen-building-photos");
 const guestbookDiv = document.getElementById("guestbook-div");
+const fileDiv = document.getElementById("file-div");
 
 // classes
 const largeText = document.getElementsByClassName("large");
@@ -35,3 +36,5 @@ let currentIndex = 0;
 const bpIframe = document.getElementById("bp-iframe");
 // Guestbook
 const guestbookIframe = document.getElementById("guestbook-frame");
+// file
+const fileIframe = document.getElementById("file-iframe");
