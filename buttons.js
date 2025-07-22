@@ -83,18 +83,33 @@ gbButton.onclick = function () {
 
 // File archive
 faPGButton.onclick = function () {
+  if (window.mobileCheck() === true) {
+    window.open("../file_map/pineglen.html");
+    return false;
+  }
+
   animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/pineglen.html";
   prevLoc = 0;
 }
 
 faMSMSButton.onclick = function () {
+  if (window.mobileCheck() === true) {
+    window.open("../file_map/msms.html");
+    return false;
+  }
+
   animPut(msmsDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/msms.html";
   prevLoc = 1;
 }
 
 faBHSButton.onclick = function () {
+  if (window.mobileCheck() === true) {
+    window.open("../file_map/bhs.html");
+    return false;
+  }
+
   animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/bhs.html";
   prevLoc = 1;
