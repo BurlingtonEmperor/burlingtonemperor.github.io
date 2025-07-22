@@ -83,18 +83,21 @@ gbButton.onclick = function () {
 
 // File archive
 faPGButton.onclick = function () {
-  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  animPut(pineglenDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/pineglen.html";
+  prevLoc = 0;
 }
 
 faMSMSButton.onclick = function () {
-  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  animPut(msmsDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/msms.html";
+  prevLoc = 1;
 }
 
 faBHSButton.onclick = function () {
-  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
+  animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/bhs.html";
+  prevLoc = 1;
 }
 
 // back clicks
@@ -155,5 +158,15 @@ extraButton.onclick = function () {
 
 // back from file viewer
 backFiles.onclick = function () {
-  animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
+  switch (prevLoc) {
+    case 0:
+      animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "morning.jpg", pineglenDiv);
+      break;
+    case 1:
+      animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "afternoon.jpg", msmsDiv);
+      break;
+    case 2:
+      animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
+      break;
+  }
 }
