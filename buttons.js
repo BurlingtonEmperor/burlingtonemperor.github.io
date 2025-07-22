@@ -112,7 +112,7 @@ faBHSButton.onclick = function () {
 
   animPut(bhsDiv, "Utopia_Asterisk.mp3", commonImagePath + "vernalpool.jpg", fileDiv);
   fileIframe.src = "../file_map/bhs.html";
-  prevLoc = 1;
+  prevLoc = 2;
 }
 
 // back clicks
