@@ -1,5 +1,5 @@
-const API_KEY = 'YOUR_API_KEY';  
-const ROOT_FOLDER_ID = '1EjSXO2uNPu6ZhykVXekm_V0mpCStJjBl';  // Root folder ID
+const API_KEY = 'AIzaSyBYKli52-eSFSAVzN97R4pKTeTHUjB1PuY';  
+const ROOT_FOLDER_ID = '1QANAtFwUskejID7VGeKLo4tn5x2rVtqi';  // Root folder ID
 
 const fileListContainer = document.getElementById('file-list');
 const folderTreeContainer = document.getElementById('folder-tree');
