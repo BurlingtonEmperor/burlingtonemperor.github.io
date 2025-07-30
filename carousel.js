@@ -82,3 +82,11 @@ preloadImages.forEach(src => {
   const img = new Image();
   img.src = src;
 });
+
+$(document).on("keydown", function(e) {
+  if (e.key === "ArrowRight") {
+    $(".next").trigger("click");
+  } else if (e.key === "ArrowLeft") {
+    $(".prev").trigger("click");
+  }
+});
