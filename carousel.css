@@ -178,14 +178,16 @@
 .e:hover {
   background-color: #ae83af;
 }
-
-/*
-
+ 
 .f {
-    transform: rotateY(300deg) translateZ(250px);
-    background: #e2d9d0;
-    background-image: url("../IMG_0670.jpeg");
-  } */
+  transform: rotateY(300deg) translateZ(250px);
+  background: #e2d9d0;
+  transition: background-color 0.2s ease-in-out;
+} 
+
+.f:hover {
+  background-color: #847474;
+}
 
 /* .next:hover, .prev:hover { color: #000; } */
 
