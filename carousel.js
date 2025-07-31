@@ -92,30 +92,30 @@ $(document).on("keydown", function(e) {
 });
 
 // touch gestures
-let touchStartX = 0;
-let touchEndX = 0;
+// let touchStartX = 0;
+// let touchEndX = 0;
 
-const handleGesture = () => {
-  const swipeDistance = touchEndX - touchStartX;
+// const handleGesture = () => {
+//   const swipeDistance = touchEndX - touchStartX;
 
-  if (Math.abs(swipeDistance) < 50) return; // ignore tiny swipes
+//   if (Math.abs(swipeDistance) < 50) return; // ignore tiny swipes
 
-  if (swipeDistance < 0) {
-    // Swiped left
-    $(".next").trigger("click");
-  } else {
-    // Swiped right
-    $(".prev").trigger("click");
-  }
-};
+//   if (swipeDistance < 0) {
+//     // Swiped left
+//     $(".next").trigger("click");
+//   } else {
+//     // Swiped right
+//     $(".prev").trigger("click");
+//   }
+// };
 
-const carouselElement = document.querySelector('.carousel');
+// const carouselElement = document.querySelector('.carousel');
 
-carouselElement.addEventListener("touchstart", (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-});
+// carouselElement.addEventListener("touchstart", (e) => {
+//   touchStartX = e.changedTouches[0].screenX;
+// });
 
-carouselElement.addEventListener("touchend", (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  handleGesture();
-});
+// carouselElement.addEventListener("touchend", (e) => {
+//   touchEndX = e.changedTouches[0].screenX;
+//   handleGesture();
+// });
