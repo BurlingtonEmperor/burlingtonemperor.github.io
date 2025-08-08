@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CSS CRT (Quick)</title>
+<style>
+  :root{
+    --w: 640px;
+    --h: 360px;
+    --scan-opacity: 0.07;
+    --chrom-offset: 2px;
+    --glow: 0 20px 60px rgba(0,160,255,0.06);
+  }
+
+  body{
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    background:#080808;
+    margin:0;
+    font-family: system-ui, sans-serif;
+  }
+
+  .crt-shell{
+    width:var(--w);
+    height:var(--h);
+    position:relative;
+    border-radius:28px;
+    overflow:hidden;
+    transform: perspective(900px) rotateX(6deg);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.8), var(--glow);
+    background: #07121a;
+  }
+
+  /* content to show (image/video/element) */
+  .screen{
+    position:absolute;
+    inset:0;
+    display:block;
+    background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s='); /* replace */
+    background-size: cover;
+    background-position: center;
+    transform-origin:center;
+    /* slight convex effect: scale Y smaller and scale X bigger */
+    transform: translateZ(0) scaleX(1.025) scaleY(0.985);
+    filter: contrast(1.05) saturate(1.05);
+  }
+
+  /* curved "glass" highlight — helps sell the curvature */
+  .crt-shell::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+      radial-gradient(120% 60% at 50% 10%, rgba(255,255,255,0.06), transparent 12%),
+      linear-gradient(180deg, rgba(255,255,255,0.02), transparent 20%),
+      linear-gradient(0deg, rgba(255,255,255,0.02), transparent 50%);
+    mix-blend-mode: screen;
+    transform: translateZ(20px);
+  }
+
+  /* vignette */
+  .crt-shell::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background: radial-gradient(120% 100% at 50% 50%,
+      rgba(0,0,0,0.0) 40%,
+      rgba(0,0,0,0.35) 85%);
+    mix-blend-mode:multiply;
+  }
+
+  /* scanlines layer */
+  .scanlines{
+    position:absolute;
+    inset:0;
+    background-image: linear-gradient(rgba(0,0,0,var(--scan-opacity)), rgba(0,0,0,0));
+    background-size: 100% 4px;
+    pointer-events:none;
+    mix-blend-mode: multiply;
+  }
+
+  /* chromatic aberration — three colored layers slightly offset */
+  .aberration{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    mix-blend-mode: screen;
+    display:block;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.6px);
+    transform: translateX(var(--chrom-offset));
+    opacity:0.8;
+    clip-path: inset(0 0 0 0 round 28px);
+  }
+  .aberration.b{
+    filter: blur(1px) saturate(1.2);
+    transform: translateX(calc(var(--chrom-offset) * -1));
+    opacity:0.55;
+    mix-blend-mode: screen;
+    background-blend-mode: screen;
+    background-color: rgba(0,0,0,0);
+    background-image: linear-gradient(to right, rgba(255,0,0,0.14), rgba(255,0,0,0)), 
+                      url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=');
+    background-size:cover;
+  }
+
+  /* subtle curvature shadow at edges (inner bezel) */
+  .inner-shadow{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    box-shadow: inset 0 40px 70px rgba(0,0,0,0.25), inset 0 -30px 40px rgba(0,0,0,0.18);
+    border-radius: 20px;
+  }
+
+  /* optional green phosphor tint & glow */
+  .phosphor{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    mix-blend-mode: screen;
+    background: linear-gradient(180deg, rgba(180,255,200,0.02), rgba(0,0,0,0));
+    opacity:0.6;
+  }
+
+  /* small control hint */
+  .label{ position:absolute; left:10px; bottom:8px; color:#9fd; font-size:12px; opacity:0.85 }
+</style>
+</head>
+<body>
+  <div class="crt-shell">
+    <div class="screen"></div>
+
+    <!-- duplicate layers for chromatic aberration -->
+    <div class="aberration" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s='); filter:hue-rotate(-10deg) saturate(1.2) contrast(1.02)"></div>
+    <div class="aberration b"></div>
+
+    <div class="scanlines"></div>
+    <div class="inner-shadow"></div>
+    <div class="phosphor"></div>
+    <div class="label">CSS CRT — quick demo</div>
+  </div>
+</body>
+</html>
