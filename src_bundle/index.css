@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "FSEX300";
+  src: url("FSEX300.ttf");
+}
+
 body {
+  font-family: "FSEX300";
   background-color: black;
+}
+
+p {
+  margin: 0;
+  color: red;
+  font-size: 5vw;
 }
