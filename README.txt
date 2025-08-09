@@ -13,6 +13,9 @@ You can use less CSS files, lazy-load images, etc.
 
 Someone could really make this into something special.
 
+Alexander Chang
+08-08-25
+
 Libraries Used:
 JQuery
 ThreeJS
