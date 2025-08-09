@@ -38,3 +38,8 @@ wildwoodButton.onclick = function () {
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=wildwood";
   animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
 }
+
+memorialButton.onclick = function () {
+  bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=memorial";
+  animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
+}
