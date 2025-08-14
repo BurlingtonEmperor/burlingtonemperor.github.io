@@ -2,6 +2,7 @@ const francisButton = document.getElementById("francis-button");
 const memorialButton = document.getElementById("memorial-button");
 const hurldButton = document.getElementById("hurld-button");
 const wildwoodButton = document.getElementById("wildwood-button");
+const foxButton = document.getElementById("fox-button");
 
 const backBP = document.getElementById("back-bp");
 
@@ -41,5 +42,10 @@ wildwoodButton.onclick = function () {
 
 memorialButton.onclick = function () {
   bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=memorial";
+  animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
+}
+
+foxButton.onclick = function () {
+  bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=fox";
   animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
 }
