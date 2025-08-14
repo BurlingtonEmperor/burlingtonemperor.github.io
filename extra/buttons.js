@@ -46,6 +46,6 @@ memorialButton.onclick = function () {
 }
 
 foxButton.onclick = function () {
-  bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=fox";
+  bpIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/?building=foxhill";
   animPut(mainDiv, "../extra/Winter.jpg", photoViewer);
 }
