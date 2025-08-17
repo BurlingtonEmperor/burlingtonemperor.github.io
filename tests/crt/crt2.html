@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Canvas CRT (Barrel Distortion)</title>
+<style>
+  body{ margin:0; height:100vh; display:flex; gap:20px; align-items:center; justify-content:center; background:#0a0a0a; color:#ddd; font-family: system-ui, sans-serif;}
+  .wrap{ display:flex; flex-direction:column; align-items:center; gap:12px;}
+  canvas{ background:#000; border-radius:18px; box-shadow: 0 18px 60px rgba(0,0,0,0.9); }
+  .controls{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:center;}
+  label{ font-size:13px; color:#bfe; }
+  input[type=range]{ width:160px; }
+  .credits{ font-size:12px; color:#89a; margin-top:6px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <canvas id="crt" width="800" height="450"></canvas>
+    <div class="controls">
+      <label>Distortion <input id="k" type="range" min="0" max="1" value="0.35" step="0.01"></label>
+      <label>Scanlines <input id="scan" type="range" min="0" max="0.2" value="0.07" step="0.005"></label>
+      <label>Chromatic <input id="chrom" type="range" min="0" max="6" value="2" step="0.2"></label>
+      <button id="swap">Swap image</button>
+    </div>
+    <div class="credits">Advanced canvas barrel distortion + overlays</div>
+  </div>
+
+<script>
+/*
+  Barrel distortion implementation (pixel remapping).
+  - k is distortion strength (0..1), positive = barrel (fisheye).
+  - This scales coordinates from center and samples original.
+  - Uses three sample offsets for R/G/B to create chromatic aberration.
+*/
+
+const canvas = document.getElementById('crt');
+const ctx = canvas.getContext('2d', { willReadFrequently: true });
+const w = canvas.width, h = canvas.height;
+
+let imgUrls = [
+  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=',
+  'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s='
+];
+let curImgIndex = 0;
+
+const src = new Image();
+src.crossOrigin = 'anonymous';
+src.src = imgUrls[curImgIndex];
+
+const kRange = document.getElementById('k');
+const scanRange = document.getElementById('scan');
+const chromRange = document.getElementById('chrom');
+document.getElementById('swap').addEventListener('click', ()=>{
+  curImgIndex = (curImgIndex +1) % imgUrls.length;
+  src.src = imgUrls[curImgIndex];
+});
+
+src.onload = () => requestAnimationFrame(render);
+kRange.addEventListener('input', ()=> requestAnimationFrame(render));
+scanRange.addEventListener('input', ()=> requestAnimationFrame(render));
+chromRange.addEventListener('input', ()=> requestAnimationFrame(render));
+
+function render(){
+  // draw source to an offscreen canvas for sampling
+  const off = document.createElement('canvas');
+  off.width = w; off.height = h;
+  const octx = off.getContext('2d');
+  // draw image filling canvas while preserving aspect
+  octx.globalCompositeOperation = 'source-over';
+  const ar = src.width/src.height;
+  const tar = w/h;
+  let dx=0, dy=0, dw=w, dh=h;
+  if (ar > tar) {
+    // image wider
+    dh = h;
+    dw = h * ar;
+    dx = (w - dw)/2;
+  } else {
+    dw = w;
+    dh = w / ar;
+    dy = (h - dh)/2;
+  }
+  octx.drawImage(src, dx, dy, dw, dh);
+
+  // get image data once
+  const srcData = octx.getImageData(0,0,w,h).data;
+  const out = ctx.createImageData(w,h);
+  const dst = out.data;
+
+  const k = parseFloat(kRange.value);        // distortion strength
+  const scan = parseFloat(scanRange.value);  // scanline darkness
+  const chrom = parseFloat(chromRange.value); // chromatic px offset in px
+
+  // center coords
+  const cx = w/2, cy = h/2;
+  // normalize factor to map radius to 0..1
+  const maxR = Math.sqrt(cx*cx + cy*cy);
+
+  // helper to sample source with bilinear-like nearest sampling
+  function sample(x,y,channelOffset=0){
+    // clamp
+    const ix = Math.max(0, Math.min(w-1, Math.round(x)));
+    const iy = Math.max(0, Math.min(h-1, Math.round(y)));
+    const idx = (iy * w + ix) * 4 + channelOffset;
+    return srcData[idx];
+  }
+
+  // main remap loop (careful: performance)
+  for (let j=0; j<h; j++){
+    // precompute scanline multiplier
+    const scanMul = 1 - scan * (0.5 + 0.5 * Math.sin((j / 2) * Math.PI / 180));
+    for (let i=0; i<w; i++){
+      // vector from center
+      const dx0 = (i - cx);
+      const dy0 = (j - cy);
+      const r = Math.sqrt(dx0*dx0 + dy0*dy0) / maxR; // 0..1
+      // barrel distortion formula: r' = r * (1 + k * r^2)
+      const rr = r * (1 + k * (r*r));
+      const scale = (rr === 0) ? 1 : (rr / r);
+      const sx = cx + dx0 * scale;
+      const sy = cy + dy0 * scale;
+
+      // sample channels with small offsets for chromatic effect
+      const rx = sx + chrom * (dx0 / (maxR)) * 0.6;
+      const gx = sx;
+      const bx = sx - chrom * (dx0 / (maxR)) * 0.6;
+      const ry = sy + chrom * (dy0 / (maxR)) * 0.6;
+      const gy = sy;
+      const by = sy - chrom * (dy0 / (maxR)) * 0.6;
+
+      const rC = sample(rx, ry, 0);
+      const gC = sample(gx, gy, 1);
+      const bC = sample(bx, by, 2);
+
+      const idx = (j*w + i) * 4;
+      // apply scanline multiplier and a little phosphor tint
+      dst[idx]   = Math.min(255, rC * scanMul * 1.03 + 6 * (1 - r));
+      dst[idx+1] = Math.min(255, gC * scanMul * 1.02 + 10 * (1 - r));
+      dst[idx+2] = Math.min(255, bC * scanMul * 1.00 + 4 * (1 - r));
+      dst[idx+3] = 255;
+    }
+  }
+
+  // draw result
+  ctx.putImageData(out, 0, 0);
+
+  // overlays: subtle vignette and glass highlight
+  const g = ctx.createLinearGradient(0, 0, 0, h);
+  g.addColorStop(0, 'rgba(255,255,255,0.02)');
+  g.addColorStop(0.18, 'rgba(255,255,255,0.00)');
+  ctx.fillStyle = g;
+  ctx.fillRect(0,0,w,h);
+
+  // vignette
+  ctx.globalCompositeOperation = 'multiply';
+  const vg = ctx.createRadialGradient(cx, cy, Math.min(w,h)*0.1, cx, cy, Math.max(w,h)*0.7);
+  vg.addColorStop(0, 'rgba(0,0,0,0)');
+  vg.addColorStop(1, 'rgba(0,0,0,0.45)');
+  ctx.fillStyle = vg;
+  ctx.fillRect(0,0,w,h);
+
+  // subtle top-right glass streak
+  ctx.globalCompositeOperation = 'screen';
+  ctx.fillStyle = 'rgba(255,255,255,0.03)';
+  ctx.beginPath();
+  ctx.ellipse(w*0.65, h*0.14, w*0.45, h*0.18, -0.6, 0, Math.PI*2);
+  ctx.fill();
+
+  // reset composite op
+  ctx.globalCompositeOperation = 'source-over';
+}
+
+</script>
+</body>
+</html>
