@@ -14,6 +14,7 @@ const gbButton = document.getElementById("gb-button");
 
 const guestButton = document.getElementById("guest-button");
 const extraButton = document.getElementById("extra-button");
+const arcadeButton = document.getElementById("fall-portal"); // arcade
 
 // file archive
 const faPGButton = document.getElementById("fa-pg-button");
@@ -184,4 +185,9 @@ backFiles.onclick = function () {
       animPut(fileDiv, "Utopia_Asterisk.mp3", commonImagePath + "night.jpg", bhsDiv);
       break;
   }
+}
+
+// Arcade
+arcadeButton.onclick = function () {
+  animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "arcade.jpg", arcadeDiv);
 }

@@ -21,6 +21,8 @@ const buildingPhotoViewer = document.getElementById("pine-glen-building-photos")
 const guestbookDiv = document.getElementById("guestbook-div");
 const fileDiv = document.getElementById("file-div");
 
+const arcadeDiv = document.getElementById("arcade-div");
+
 // classes
 const largeText = document.getElementsByClassName("large");
 

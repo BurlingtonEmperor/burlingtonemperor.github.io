@@ -181,12 +181,12 @@
  
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: #e2d9d0;
+  background: #78c495;
   transition: background-color 0.2s ease-in-out;
 } 
 
 .f:hover {
-  background-color: #847474;
+  background-color: #205e4a;
 }
 
 /* .next:hover, .prev:hover { color: #000; } */
