@@ -30,6 +30,8 @@ const backPineglen_bp = document.getElementById("back-pineglen-bp"); // this is 
 const backGuestbook = document.getElementById("back-guestbook");
 const backFiles = document.getElementById("back-files");
 
+const backArcade = document.getElementById("back-arcade");
+
 pineglenButton.onclick = function () {
   animPut(homescreen, "pineglen.mp3", commonImagePath + "morning.jpg", pineglenDiv);
 }
@@ -190,4 +192,8 @@ backFiles.onclick = function () {
 // Arcade
 arcadeButton.onclick = function () {
   animPut(homescreen, "Utopia_Asterisk.mp3", commonImagePath + "arcade.jpg", arcadeDiv);
+}
+
+backArcade.onclick = function () {
+  animPut(arcadeDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
