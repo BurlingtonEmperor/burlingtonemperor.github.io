@@ -252,6 +252,24 @@ button {
   overflow-y: auto;
 }
 
+#iframe-skinsuit {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#obito {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#skinsuit-back {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 @keyframes moveClouds {
   0% {
     transform: translateX(-200px);

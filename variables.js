@@ -22,6 +22,8 @@ const guestbookDiv = document.getElementById("guestbook-div");
 const fileDiv = document.getElementById("file-div");
 
 const arcadeDiv = document.getElementById("arcade-div");
+const iframeSkinsuit = document.getElementById("iframe-skinsuit");
+const obitoIframe = document.getElementById("obito"); // iframe holder
 
 // classes
 const largeText = document.getElementsByClassName("large");

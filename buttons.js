@@ -197,3 +197,19 @@ arcadeButton.onclick = function () {
 backArcade.onclick = function () {
   animPut(arcadeDiv, "Utopia_Asterisk.mp3", commonImagePath + "pinksky.jpeg", homescreen);
 }
+
+// arcade portals
+const panovisionPortal = document.getElementById("panovision-portal");
+const skinsuitBack = document.getElementById("skinsuit-back");
+
+panovisionPortal.onclick = function () {
+  $(arcadeDiv).hide();
+  $(iframeSkinsuit).show();
+
+  obitoIframe.src = "https://burlingtonemperor.github.io/Pano-Vision/index.html";
+}
+
+skinsuitBack.onclick = function () {
+  $(arcadeDiv).show();
+  $(iframeSkinsuit).hide();
+}
