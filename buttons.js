@@ -212,4 +212,6 @@ panovisionPortal.onclick = function () {
 skinsuitBack.onclick = function () {
   $(arcadeDiv).show();
   $(iframeSkinsuit).hide();
+
+  obitoIframe.src = "";
 }
