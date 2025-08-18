@@ -171,8 +171,8 @@ button {
   backdrop-filter: blur(10px);           /* Glass blur effect */
   -webkit-backdrop-filter: blur(10px);   /* For Safari */
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: black;
-  font-size: 1.1rem;
+  color: rgb(251, 251, 251);
+  font-size: 6vh;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
@@ -188,6 +188,10 @@ button {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.center-button-new {
+  text-align: center;
 }
 
 /* #background {
