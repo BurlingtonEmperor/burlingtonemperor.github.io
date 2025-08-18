@@ -164,6 +164,32 @@ button {
   height: 100%;
 }
 
+.glass-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass */
+  backdrop-filter: blur(10px);           /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: auto;
+  outline: none;
+  font-family: "ROMANSEX";
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
 /* #background {
   position: absolute;
   width: 99.5vw;
@@ -209,6 +235,14 @@ button {
 
 #site-news {
   font-size: 1.5vw;
+}
+
+#arcade-options {
+  height: 80%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  overflow-y: auto;
 }
 
 @keyframes moveClouds {
