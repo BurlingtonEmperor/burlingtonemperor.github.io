@@ -245,6 +245,7 @@ button {
 
 #arcade-options {
   height: 80%;
+  width: 100%;
   text-align: center;
   margin: auto;
   position: absolute;
