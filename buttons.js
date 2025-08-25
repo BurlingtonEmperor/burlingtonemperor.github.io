@@ -200,6 +200,7 @@ backArcade.onclick = function () {
 
 // arcade portals
 const panovisionPortal = document.getElementById("panovision-portal");
+const memoricPortal = document.getElementById("memoric-portal");
 const skinsuitBack = document.getElementById("skinsuit-back");
 
 panovisionPortal.onclick = function () {
@@ -209,9 +210,17 @@ panovisionPortal.onclick = function () {
   obitoIframe.src = "https://burlingtonemperor.github.io/Pano-Vision/index.html";
 }
 
+memoricPortal.onclick = function () {
+  $(arcadeDiv).hide();
+  $(iframeSkinsuit).show();
+
+  obitoIframe.src = "https://github.com/BurlingtonEmperor/burlingtonemperor.github.io/blob/main/index.html";
+}
+
 skinsuitBack.onclick = function () {
   $(arcadeDiv).show();
   $(iframeSkinsuit).hide();
 
   obitoIframe.src = "";
+
 }
