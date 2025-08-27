@@ -201,6 +201,7 @@ backArcade.onclick = function () {
 // arcade portals
 const panovisionPortal = document.getElementById("panovision-portal");
 const memoricPortal = document.getElementById("memoric-portal");
+const magicForestPortal = document.getElementById("magicforest-portal");
 const skinsuitBack = document.getElementById("skinsuit-back");
 
 panovisionPortal.onclick = function () {
@@ -214,7 +215,14 @@ memoricPortal.onclick = function () {
   $(arcadeDiv).hide();
   $(iframeSkinsuit).show();
 
-  obitoIframe.src = "https://github.com/BurlingtonEmperor/burlingtonemperor.github.io/blob/main/index.html";
+  obitoIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/memoric/memoric.html";
+}
+
+magicForestPortal.onclick = function () {
+  $(arcadeDiv).hide();
+  $(iframeSkinsuit).show();
+
+  obitoIframe.src = "https://burlingtonemperor.github.io/building_photos_archive/magicforest/index.html";
 }
 
 skinsuitBack.onclick = function () {
@@ -222,5 +230,4 @@ skinsuitBack.onclick = function () {
   $(iframeSkinsuit).hide();
 
   obitoIframe.src = "";
-
 }
